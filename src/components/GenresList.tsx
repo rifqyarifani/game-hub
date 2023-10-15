@@ -3,7 +3,6 @@ import {
   List,
   ListItem,
   Image,
-  Spinner,
   Button,
   Heading,
 } from "@chakra-ui/react";
@@ -16,7 +15,7 @@ interface Props {
 }
 
 const GenresList = ({ onSelectGenre, selectedGenre }: Props) => {
-  const { data, loading, error } = useGenres();
+  const { data } = useGenres();
 
   return (
     <>
